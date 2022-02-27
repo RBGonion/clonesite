@@ -14,14 +14,6 @@ a{
     color: rgb(89, 199, 79);
 }
 
-.contain {
-    display: flex;
-    flex-flow: column;
-    
-}
-
-
-
 
 
 .header {
@@ -50,6 +42,10 @@ a{
 .imformationwindow {
     background-color: yellow;
 }
+
+.imformationwindow .hashtag{
+    display: flex;
+}
 .title {
     display: flex;
     justify-content: space-between;
@@ -63,16 +59,21 @@ a{
 }
 .chaner-information {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .subbutton {
 }
 
-
+.ddd {
+    display: flex;
+    align-items: center;
+    
+}
 
 .playlist {
     display: flex;
     flex-flow: column;
-    align-items: center;
     background-color: purple;
     margin: 0;
 }

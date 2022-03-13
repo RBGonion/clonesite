@@ -23,27 +23,32 @@
         <!-- icon *2-->
       </div>
     </div>
-
-    <header id="welcome-header">
-      <h1 class="welcome-header__title">welcome to kokoa clone</h1>
-      <p class="welcome-header__text">
-        if you have a kakao account, log in with your email or phone number
-      </p>
-    </header>
-
-    <form action="friends.html" method="get" id="login-form">
-      <input
-        name="username"
-        required
-        type="text"
-        requier
-        placeholder="email or phone number"
-      />
-      <input name="password" required type="password" placeholder="password" />
-      <input type="submit" value="log in" />
-      <a href="#">find kokoa account or password</a>
-    </form>
-
+    <nav class="menu-bar">
+      <ul class="menu-bar-ul">
+        <li class="menu-bar-li">
+          <a class="menu-bar-a" href="friends.html"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </li>
+        <li class="menu-bar-li">
+          <a class="menu-bar-a" href="chat.html">
+            <span class="nav-notification">1</span
+            ><i class="fa-solid fa-comment"></i
+          ></a>
+        </li>
+        <li class="menu-bar-li">
+          <a class="menu-bar-a" href="search.html"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </li>
+        <li class="menu-bar-li">
+          <a class="menu-bar-a" href="setting.html"
+            ><span class="nav-notification2"></span
+            ><i class="fa-solid fa-ellipsis"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
     <script
       src="https://kit.fontawesome.com/39b6b56791.js"
       crossorigin="anonymous"

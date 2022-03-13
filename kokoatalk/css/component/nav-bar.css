@@ -1,0 +1,42 @@
+.menu-bar {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.menu-bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu-bar-a {
+  font-size: x-large;
+  position: relative;
+}
+.nav-notification {
+  background-color: tomato;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  position: absolute;
+  left: 13px;
+  bottom: 13px;
+}
+.nav-notification2 {
+  background-color: tomato;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 15px;
+  position: absolute;
+  left: 20px;
+}

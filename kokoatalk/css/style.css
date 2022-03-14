@@ -9,7 +9,7 @@
 /* screen */
 @import "screens/login.css";
 @import "screens/friends.css";
-
+@import "screens/search.css";
 body {
   display: flex;
   flex-flow: column;

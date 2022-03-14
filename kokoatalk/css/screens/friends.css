@@ -13,18 +13,20 @@
 .user-component {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: var(--main-border);
   margin: 0 20px;
 }
 
 .user-component-element {
-  padding: 10px;
+  font-size: large;
+  font-weight: 500;
 }
 
 .user-component img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 20px;
+  margin: 10px 10px 10px 0;
 }
 
 .channel {
@@ -43,12 +45,12 @@
   border-radius: 15px;
 }
 .channel-list-element1 {
-  margin: 15px;
+  margin: 20px;
 }
 .channel-list-element2 {
   display: flex;
   flex-flow: column;
-  margin: 15px;
+  margin: 0 0 0 -50px;
 }
 .channel-list-element3 {
   position: relative;

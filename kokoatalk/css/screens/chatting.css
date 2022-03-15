@@ -1,0 +1,68 @@
+.chatting {
+  background-color: rgb(211, 242, 241);
+  height: 1000vh;
+}
+.main-chat {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.timestamp {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.message-row {
+  display: flex;
+  margin: 20px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+.message-info {
+  display: flex;
+  align-items: flex-end;
+}
+.message-author {
+  display: block;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.message-bubble {
+  background-color: aliceblue;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  opacity: 0.9;
+}
+.message-time {
+  font-size: 10px;
+}
+.revers {
+  justify-content: flex-end;
+}
+
+.revers .message-bubble {
+  background-color: rgb(255, 255, 0);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+  order: 1;
+  margin-left: 5px;
+}
+.revers .message-time {
+  order: 0;
+}

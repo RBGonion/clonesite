@@ -26,5 +26,3 @@ if (saveUsername === null) {
 } else {
   paintGreetings(saveUsername);
 }
-
-console.dir(greeting);

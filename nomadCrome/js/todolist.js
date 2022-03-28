@@ -30,19 +30,19 @@ function paintToDo(newTodo) {
 }
 
 function handleToDoSubmit(event) {
-  event.preventDefault();
-  const newTodo = toDoInput.value;
-  toDoInput.value = "";
+  event.preventDefault(); // 기본동작 제어
+  const newTodo = toDoInput.value; // 변수를 지정해 줌으로써 값을 메모리에 저장한다
+  toDoInput.value = ""; // input의 입력칸을 비운다
   const newTodoOBJ = {
     text: newTodo,
     id: Date.now(),
-  };
-  toDos.push(newTodoOBJ);
-  paintToDo(newTodoOBJ);
-  saveToDos();
+  }; // 앞서 저장한 입력값에 고유ID를 부여하고 객체로 묶어서 저장한다
+  toDos.push(newTodoOBJ); // 객체로 묶은 값을 빈 배열에 저장
+  paintToDo(newTodoOBJ); //인자가 newTodoOB인 paintToDo함수 실행
+  saveToDos(); // 함수 실행
 }
 
-toDoForm.addEventListener("submit", handleToDoSubmit);
+toDoForm.addEventListener("submit", handleToDoSubmit); // submit시 이벤트 발동
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 

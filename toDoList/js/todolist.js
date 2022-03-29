@@ -1,5 +1,10 @@
 const formtag = document.querySelector("#inputValueTest");
 const inputtag = document.querySelector("#inputValueTest input");
+const ul = document.querySelector(".formUL");
+
+deletebutton() {
+  
+}
 
 function getvalue(event) {
   event.preventDefault();
@@ -9,11 +14,13 @@ function getvalue(event) {
 
   const li = document.createElement("li");
   const span = document.createElement("span");
-  const ul = document.querySelector(".formUL");
+  const button = document.createElement("button");
+  deletebutton();
 
+  li.appendChild(span);
+  li.appendChild(button);
+  button.innerText = "X";
   ul.appendChild(li);
-  ul.appendChild(span);
-
   span.innerText = `${inputvalue}`;
 }
 

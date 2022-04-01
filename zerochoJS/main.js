@@ -1,20 +1,28 @@
-const peopleNumber = prompt("몇 명이 참가하나요?");
-const form = document.querySelector("#form");
-const input = document.querySelector("#form input");
-const word = document.querySelector("#word span:last-child");
-const orderNumber = document.querySelector("#order span:first-child");
+const word = document.createElement("div");
+word.innerText = `초기값`;
+word.style.fontSize = `30px`;
+document.body.append(word);
+const form = document.createElement("form");
+document.body.append(form);
+const input = document.createElement("input");
+form.append(input);
+const input2 = document.createElement("input");
+form.append(input2);
+input2.id = input2;
+input2.type = "submit";
+const result = document.createElement("div");
+document.body.append(result);
 
-function addword(event) {
+function texttrain(event) {
   event.preventDefault();
-  const inputValue = input.value;
+  const inputvalue = input.value;
+  word.innerText = `${inputvalue}`;
   input.value = "";
-  word.innerText = inputValue;
-  if (word.innerText !== "") {
+  if (inputvalue[0] === word.innerText[word.innerText.length - 1]) {
+    result.innerText = `딩동댕`;
   } else {
-    if (true) {
-      console.log("dds");
-    }
+    result.innerText = `땡`;
   }
 }
 
-form.addEventListener("submit", addword);
+form.addEventListener("submit", texttrain);

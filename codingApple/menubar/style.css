@@ -16,6 +16,7 @@ header {
   align-items: flex-end;
   padding: 10px;
   background-color: rgb(186, 144, 144);
+  z-index: 1;
 }
 
 nav span {

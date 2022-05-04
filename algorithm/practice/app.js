@@ -2,14 +2,9 @@ const fs = require("fs");
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 let input = fs.readFileSync(filePath).toString().trim().split("\n");
 
-/*
-input = +input;
+input = input[0];
 
-for (let i = 0; i < input; i++) {
-  let answer = "";
-  for (let j = 0; j <= i; j++) {
-    answer += "*";
-  }
-  console.log(answer);
+if (input < 10) {
+  input = "0" + String(input);
 }
-*/
+console.log(input);

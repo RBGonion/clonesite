@@ -4,7 +4,7 @@ body {
 }
 
 form {
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: 100px;
 }

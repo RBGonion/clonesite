@@ -28,6 +28,6 @@ input2.addEventListener("click", (e) => {
 
 input3.addEventListener("click", (e) => {
   e.preventDefault();
-  let Y = divs.getBoundingClientRect().y;
-  window.scrollTo(0, Y);
+  let Y = divs.scrollIntoView();
+  divs.scrollTo(0, Y);
 });

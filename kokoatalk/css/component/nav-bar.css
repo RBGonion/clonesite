@@ -30,7 +30,7 @@
   50% {
     transform: translateY(-5px) rotateY(360deg);
   }
-  100 {
+  100% {
     transform: none;
   }
 }

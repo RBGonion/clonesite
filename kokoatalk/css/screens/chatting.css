@@ -139,7 +139,6 @@
   outline: none;
 }
 
-
 .reply:focus-within .reply__column:first-child,
 .reply:focus-within .fa-smile-wink,
 .reply:focus-within button {
@@ -148,3 +147,4 @@
 .reply:focus-within input {
   width: 95vw;
   transform: translateX(-10%);
+}

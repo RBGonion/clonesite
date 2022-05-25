@@ -104,7 +104,6 @@ function divide() {
   num1 = resultwindow.innerText;
   division = "/";
   resultwindow.innerText = "";
-
   calWindow = "";
 }
 

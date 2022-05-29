@@ -50,7 +50,7 @@ class Employee {
       this.name = name;
       this.department = department;
       this.worktime = worktime;
-      this.hiresalary();
+      // this.hiresalary();
     } else {
       this.name = name;
       this.department = department;
@@ -71,9 +71,9 @@ class Employee {
 const employee = new Employee("jack", "hire", 100);
 const employee2 = new Employee("olsn", "temp", 100);
 
-employee.hiresalary;
-employee.hiresalary();
-console.log(employee2.tempsalary());
+// employee.hiresalary;
+// employee.hiresalary();
+// console.log(employee2.tempsalary());
 
 //인스턴스부터 선언한다
 //const bob = new FullTimeEmployee('bob','sw',10);
@@ -87,21 +87,41 @@ console.log(employee2.tempsalary());
 
 //
 
+// class Counter {
+//   constructor(input) {
+//     if (isNaN(input) || input < 0) {
+//       this.value = 0;
+//     } else {
+//       this.value = input;
+//     }
+//   }
+//   increase() {
+//     this.value++;
+//   }
+// }
+
+// const counter = new Counter(3);
+// counter.increase();
+// counter.increase();
+
+// console.log(counter.value);
+
 class Counter {
-  constructor(input) {
-    if (isNaN(input) || input < 0) {
-      this.value = 0;
-    } else {
-      this.value = input;
-    }
+  c = "C";
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
   }
-  increase() {
-    this.value++;
+  get add() {
+    console.log("getter");
+  }
+
+  set add(value) {
+    console.log(value);
   }
 }
+const counter = new Counter("A", "B");
 
-const counter = new Counter(3);
-counter.increase();
-counter.increase();
-
-console.log(counter.value);
+counter.add = "setter";
+counter.add;
+console.log(counter);

@@ -14,7 +14,6 @@ function makeList(e) {
 
   const li = document.createElement("li");
   li.classList.add("testClass");
-
   const span = document.createElement("span");
   span.innerText = input.value;
   const button = document.createElement("button");

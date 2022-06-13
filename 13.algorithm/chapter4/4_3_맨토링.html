@@ -6,28 +6,25 @@
   <body>
     <script>
       function solution(test) {
-        arrbox = [];
-        answer = [];
-        for (let i = 0; i < arr.length; i++) {
-          for (let j = 0; j < arr[i].length; j++) {
-            for (let k = j + 1; k < arr[i].length; k++) {
-              arrbox.push([arr[i][j], arr[i][k]]);
-            }
-          }
-        }
+        // arrbox = [];
+        // answer = [];
+        // for (let i = 0; i < arr.length; i++) {
+        //   for (let j = 0; j < arr[i].length; j++) {
+        //     for (let k = j + 1; k < arr[i].length; k++) {
+        //       arrbox.push([arr[i][j], arr[i][k]]);
+        //     }
+        //   }
+        // }
 
-        temp = [];
-        for (let i = 0; i < arrbox.length; i++) {
-          temp.push(arrbox[i].slice());
-          temp[i] = temp[i].sort((a, b) => a - b);
-          if (arrbox[i].join() === temp[i].join()) {
-            if (answer.indexOf(arrbox[i]) === -1) {
-              answer.push(arrbox[i]);
-            }
-          }
-        }
-        console.log("temp", temp);
-        console.log("arrbox", arrbox);
+        // temp = [];
+        // for (let i = 0; i < arrbox.length; i++) {
+        //   temp.push(arrbox[i].slice());
+        //   temp[i] = temp[i].sort((a, b) => a - b);
+        //   if (arrbox[i].join() === temp[i].join()) {
+        //     answer.push(arrbox[i]);
+        //   }
+        // }
+
         return answer;
       }
 

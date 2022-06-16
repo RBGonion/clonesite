@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" id="start-screen">
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="주인공 이름을 입력하세요!"
+      />
+      <button id="start">시작</button>
+    </form>
+    <div id="screen">
+      <div id="heroStates">
+        <span id="heroName"></span>
+        <span id="heroLevel"></span>
+        <span id="heroHp"></span>
+        <span id="HeroXp"></span>
+        <span id="HeroAtt"></span>
+      </div>
+      <form action="" id="gameMenu" style="display: none">
+        <div id="gameMenu1">1.모험</div>
+        <div id="gameMenu2">2.휴식</div>
+        <div id="gameMenu3">3.종료</div>
+        <input type="text" id="menuInput" />
+        <button id="menuButton">입력</button>
+      </form>
+      <form action="" id="battleMenu" style="display: none">
+        <div id="battleMenu1">1.공격</div>
+        <div id="battleMenu2">2.회복</div>
+        <div id="battleMenu3">3.도망</div>
+        <input type="text" id="battleInput" />
+        <button id="battleButton">입력</button>
+      </form>
+      <div id="message"></div>
+      <div id="monsterState">
+        <span id="monsterName"></span>
+        <span id="monsterHp"></span>
+        <span id="monsterAtt"></span>
+      </div>
+    </div>
+  </body>
+</html>

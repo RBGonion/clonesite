@@ -6,6 +6,7 @@ let curr = "";
 function btnCeClick() {
   curr = "";
   num3 = null;
+  ans.innerText = "Ans=0";
   result.innerText = "-";
   inputArray = [];
 }
@@ -89,6 +90,7 @@ function btnClick(event) {
     event.target.innerText === "."
   ) {
     curr += event.target.innerText;
+    console.log(curr);
   }
 
   //연산자버튼 클릭 시 배열에 현재값을 추가
